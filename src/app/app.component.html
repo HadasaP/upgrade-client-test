@@ -1,0 +1,4 @@
+<app-c #c [(process)]="process" (onRefresh)="refreshProcess()"></app-c>
+<app-b #b [(process)]="process" (onAddInsuredToContacts)="addInsuredToContacts($event)"
+  (onResetContacts)="resetContacts()" (onDeleteContacts)="deleteContacts()"></app-b>
+<app-a *ngIf="b && b.bb" #a [(process)]="process" (onUpdateContactsCount)="updateContactsCount($event)"></app-a>
